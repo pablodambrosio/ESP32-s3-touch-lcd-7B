@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "bsp_io_extension.c"
+        "bsp_rgb_lcd.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        esp_driver_i2c
+        esp_driver_gpio
+        esp_lcd
+        esp_mm
+        esp_timer
+)
